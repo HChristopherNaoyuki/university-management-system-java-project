@@ -16,40 +16,40 @@ The **University Management System** is a Java application that models the perso
 ## UML Diagram
 
 ```
-+----------------+
-|     Person     |
-+----------------+
-| - name: String |
-| - address: String |
-| - phoneNumber: String |
-| - emailAddress: String |
-+----------------+
-| + toString(): String |
-+----------------+
-         |
-         |
-         +-----------------------+
-         |                       |
-+----------------+      +----------------+
-|    Student     |      |    Employee    |
-+----------------+      +----------------+
-| - classStatus: String | - office: String |
-+----------------+      | - salary: double |
-| + toString(): String  | - dateHired: MyDate |
-+----------------+      +----------------+
-                       | + toString(): String |
-                       +-----------------------+
-                               |
-                 +-------------+-------------+
-                 |                           |
-         +----------------+             +----------------+
-         |     Faculty    |             |      Staff     |
-         +----------------+             +----------------+
-         | - officeHours: String |     | - title: String |
-         | - rank: String        |     +----------------+
-         +----------------+      | + toString(): String |
-         | + toString(): String |     +----------------+
-         +----------------+       
++--------------------------+
+|     Person               |
++--------------------------+
+| - name: String           |
+| - address: String        |
+| - phoneNumber: String    |
+| - emailAddress: String   |
++--------------------------+
+| + toString(): String     |
++--------------------------+
+        |
+        |
+        +--------------------------------+
+        |                                |
++--------------------------+     +-----------------------+
+|       Student            |     |       Employee        |
++--------------------------+     +-----------------------+
+| - classStatus: String    |     | - office: String      |
++--------------------------+     | - salary: double      |
+| + toString(): String     |     | - dateHired: MyDate   |
++--------------------------+     +-----------------------+
+                                 | + toString(): String  |
+                                 +-----------------------+
+                                        |
+         +------------------------------+
+         |                              |
++-----------------------+    +-----------------------+ 
+|        Faculty        |    |         Staff         |
++-----------------------+    +-----------------------+ 
+| - officeHours: String |    | - title: String       |
+| - rank: String        |    +-----------------------+ 
++-----------------------+    | + toString(): String  |
+| + toString(): String  |    +-----------------------+ 
++-----------------------+       
 ```
 
 ## Installation
