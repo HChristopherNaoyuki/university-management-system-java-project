@@ -1,4 +1,4 @@
-# University Management System
+# University Personnel Management
 
 ## Overview
 
